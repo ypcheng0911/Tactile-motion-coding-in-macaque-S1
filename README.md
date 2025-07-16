@@ -62,6 +62,8 @@ Key properties of the `SingleUnit` class include:
 
 The primary "Reproducible Run" uses pre-processed data for efficiency. The following describes how the raw `.plx` data was converted into the `SingleUnit` objects. **These steps are not executed during the Reproducible Run.**
 
+Dependency: `Matlab Offline Files SDK` from Plexon software.
+
 1.  **Initialize Environment:** The `warmup.m` script loads the `Object_classes` in MATLAB.
 2.  **Create Initial Objects:** The `CreateUnits.m` script reads the raw `.plx` files from the `/data/Raw_data/` directory, creates a `SingleUnit` object for each identified neuron, and saves each object as a separate `.mat` file in the `/results/` directory. The `CreateUnits.m` script requires scripts in the Matlab Offline Files SDK, in the `/code/Raw_data_functions/` directory, provided by **Plexon**. 
 3.  **Assemble Units by Brain Areas:** The `CreateUnitAssemblyByBA.m` function gathers all `SingleUnit` objects in the `/results/` directory and build `BrainArea` objects based on the single unit's postulated location and response properties.  
