@@ -1,0 +1,22 @@
+metadata_version: 1
+name: 'Neural coding for tactile motion: Scanning speed or temporal frequency?'
+description: "This repository contains the data and MATLAB code to reproduce the
+  figures presented in our manuscript, \"Neural coding for tactile motion: Scanning
+  speed or temporal frequency?\". \n\nPlease follow the instructions in README.md
+  to execute the Reproducible Run."
+authors:
+- name: Yu-Po Cheng
+  affiliations:
+  - name: Texas A&M University
+- name: Jian-Jia Huang
+  affiliations:
+  - name: Chang Gung University
+- name: Chun-I Yeh
+  affiliations:
+  - name: National Taiwan University
+- name: Yu-Cheng Pei
+  affiliations:
+  - name: 'Chang Gung '
+corresponding_contributor:
+  name: Yu-Cheng Pei
+  email: yspeii@gmail.com
