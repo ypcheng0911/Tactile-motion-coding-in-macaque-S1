@@ -41,17 +41,17 @@ Key properties of the `SingleUnit` class include:
 ### Project Structure 
 
 ├── code/  
-│ ├── Figure_generation/ # Scripts to generate each figure, called by `run.m`  
-│ ├── Functions/  
-│ │ └── `warmup.m` # Loads project object classes (called by `run.m`)  
-│ ├── Object_classes/  
-│ │ ├── SingleUnit/ # Defines the `SingleUnit` class  
-│ │ └── BrainArea/ # Defines the `BrainArea` class  
-│ ├── Raw_data_functions/ # (Optional) Scripts to generate `Processed_core_data.mat` from raw data  
-│ └── `run.m` # Main script to execute for the Reproducible Run  
+│├── Figure_generation/ # Scripts to generate each figure, called by `run.m`  
+│├── Functions/  
+││└── `warmup.m` # Loads project object classes (called by `run.m`)  
+│├── Object_classes/  
+││├── SingleUnit/ # Defines the `SingleUnit` class  
+││└── BrainArea/ # Defines the `BrainArea` class  
+│├── Raw_data_functions/ # (Optional) Scripts to generate `Processed_core_data.mat` from raw data  
+│└── `run.m` # Main script to execute for the Reproducible Run  
 ├── data/  
-│ ├── Raw_data/ # A small sample of raw data files (provided for transparency)  
-│ └── Processed_core_data.mat # The complete pre-processed dataset used for all figures  
+│├── Raw_data/ # A small sample of raw data files (provided for transparency)  
+│└── Processed_core_data.mat # The complete pre-processed dataset used for all figures  
 └── results/ # Output directory for generated figures  
 
 ---
