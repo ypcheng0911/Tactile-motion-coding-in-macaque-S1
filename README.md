@@ -18,8 +18,8 @@ The analysis is built around an object-oriented framework where all electrophysi
 
 ## How to Reproduce All Figures
 
-1.  Download the data and code.
-2.  The main script, `run.m`, will be executed automatically. This script loads the pre-processed data and generates the base version of all figures from the manuscript. Note: These are the direct outputs from the code, prior to any minor cosmetic adjustments (e.g., adding titles or changing font sizes) made for publication.
+1.  Download the data and code. Create folders following the `Project Structure` below and place data and code accordingly. Set all folders in the `MATLAB search path` (https://www.mathworks.com/help/matlab/matlab_env/add-remove-or-reorder-folders-on-the-search-path.html).
+2.  Execute the main script `run.m` in `MATLAB`. This script loads the pre-processed data and generates the base version of all figures from the manuscript. Note: These are the direct outputs from the code, prior to any minor cosmetic adjustments (e.g., adding titles or changing font sizes) made for publication.
 3.  Upon completion, the generated figures will appear in the **/results** directory.
 
 ---
