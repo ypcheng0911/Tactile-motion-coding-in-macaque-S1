@@ -9,10 +9,10 @@ The analysis is built around an object-oriented framework where all electrophysi
 ## Access the Data
 
 |── data/  
-|    |── Processed_core_data.mat # The complete pre-processed dataset used for all figures (https://figshare.com/s/2cb969d8134181197322)  
-|    |── MyColorMaps.mat # The parameters used to generate result figures (https://figshare.com/s/6a8d4bba4583bd8851f9)  
-|    |── Processed.mat # (Optional) The pre-processed dataset with temporary variables (https://figshare.com/s/8155ddd963997b4965da)  
-|    |── Raw data/ # (Optional) A small sample of raw data files (provided for transparency) (https://figshare.com/s/30d7de62cdc911131c0f)  
+|  |── Processed_core_data.mat # The complete pre-processed dataset (https://figshare.com/s/2cb969d8134181197322)  
+|  |── MyColorMaps.mat # The parameters used to generate result figures (https://figshare.com/s/6a8d4bba4583bd8851f9)  
+|  |── Processed.mat # (Optional) The pre-processed dataset with temporary variables (https://figshare.com/s/8155ddd963997b4965da)  
+|  |── Raw data/ # (Optional) A small sample of raw data files (provided for transparency) (https://figshare.com/s/30d7de62cdc911131c0f)  
 
 ---
 
