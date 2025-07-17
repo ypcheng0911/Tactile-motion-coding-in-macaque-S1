@@ -1,14 +1,24 @@
 # Reproducibility Package for "Neural coding for tactile motion: Scanning speed or temporal frequency?"
 
-This repository contains the link to the data (url here) and MATLAB code to reproduce the figures presented in our manuscript, "Neural coding for tactile motion: Scanning speed or temporal frequency?".
+This repository contains the links to the data and MATLAB code to reproduce the figures presented in our manuscript, "Neural coding for tactile motion: Scanning speed or temporal frequency?".
 
 The analysis is built around an object-oriented framework where all electrophysiological data and metadata for a single unit are encapsulated in a `SingleUnit` object. This approach ensures data integrity and simplifies the analysis pipeline.
 
 ---
 
+## Access the Data
+
+|── data/  
+|    |── Processed_core_data.mat (https://figshare.com/s/2cb969d8134181197322)  
+|    |── Processed.mat (https://figshare.com/s/8155ddd963997b4965da)  
+|    |── MyColorMaps.mat (https://figshare.com/s/6a8d4bba4583bd8851f9)  
+|    |── Raw data/ (https://figshare.com/s/30d7de62cdc911131c0f)  
+
+---
+
 ## How to Reproduce All Figures
 
-1.  Click the **"Reproducible Run"** button at the top right of the page.
+1.  Download the data and code.
 2.  The main script, `run.m`, will be executed automatically. This script loads the pre-processed data and generates the base version of all figures from the manuscript. Note: These are the direct outputs from the code, prior to any minor cosmetic adjustments (e.g., adding titles or changing font sizes) made for publication.
 3.  Upon completion, the generated figures will appear in the **/results** directory.
 
@@ -33,7 +43,7 @@ Key properties of the `SingleUnit` class include:
 *   `parameter`: Struct containing stimulus parameters and source file information.
 *   `rasters`: Perievent spike raster plots.
 *   `psth`: Peri-stimulus time histogram.
-*   `prefer_digit`: Preferred digit (e.g., 'd2') based on highest evoked spiking rate.
+*   `prefer_digit`: Preferred digit (e.g., 'd2') based on the highest evoked spiking rate.
 *   `responsiveness`: Flag indicating if the unit's response is statistically significant.
 *   `low_rate`: Flag for low-spiking-rate units (e.g., evoked rate < 5 Hz)
 *   `excit_or_inhib`: Categorical label ('excitatory' or 'inhibitory') for the response type.
@@ -41,17 +51,17 @@ Key properties of the `SingleUnit` class include:
 ### Project Structure 
 
 |── code/  
-│  |── Figure_generation/ # Scripts to generate each figure, called by `run.m`  
-│  |── Functions/  
-│  │  |── `warmup.m` # Loads project object classes (called by `run.m`)  
-│  |── Object_classes/  
-│  │  |── SingleUnit/ # Defines the `SingleUnit` class  
-│  │  |── BrainArea/ # Defines the `BrainArea` class  
-│  |── Raw_data_functions/ # (Optional) Scripts to generate `Processed_core_data.mat` from raw data  
-│  |── `run.m` # Main script to execute for the Reproducible Run  
+│    |── Figure_generation/ # Scripts to generate each figure, called by `run.m`  
+│    |── Functions/  
+│    │    |── `warmup.m` # Loads project object classes (called by `run.m`)  
+│    |── Object_classes/  
+│    │    |── SingleUnit/ # Defines the `SingleUnit` class  
+│    │    |── BrainArea/ # Defines the `BrainArea` class  
+│    |── Raw_data_functions/ # (Optional) Scripts to generate `Processed_core_data.mat` from raw data  
+│    |── `run.m` # Main script to execute for the Reproducible Run  
 |── data/  
-│  |── Raw_data/ # A small sample of raw data files (provided for transparency)  
-│  |── Processed_core_data.mat # The complete pre-processed dataset used for all figures  
+│    |── Raw_data/ # A small sample of raw data files (provided for transparency)  
+│    |── Processed_core_data.mat # The complete pre-processed dataset used for all figures  
 |── results/ # Output directory for generated figures  
 
 ---
